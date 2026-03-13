@@ -1,0 +1,27 @@
+display_information:
+  name: DeveloperBot
+  description: Developer Agent - Coding and Technical Support
+  background_color: "#00796b"
+features:
+  bot_user:
+    display_name: DeveloperBot
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+      - im:history
+      - im:read
+      - im:write
+      - channels:history
+      - groups:history
+      - users:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - message.im
+      - message.channels
+      - message.groups
+  socket_mode_enabled: true
